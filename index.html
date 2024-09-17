@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-path">
+        <label for="style">Choose a style:</label>
+        <select name="stylelist" id="style" onclick="changeClass()">
+          <option value="top" selected>Top</option>
+          <option value="bottom">Bottom</option>
+          <option value="left">Left</option>
+          <option value="right">Right</option>
+        </select>
+      </div>
+      <div class="right-path">
+        <p>
+          You want somthing funny ?<span id="tooltip" class="top"
+            >TADA🤞😉<span></span
+          ></span>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    var classNew = document.getElementById("style");
+    function changeClass() {
+      var element = document.querySelector("#tooltip");
+      var classCurrent = document.getElementById("tooltip");
+      element.classList.replace(classCurrent.className, classNew.value);
+    }
+  </script>
+</html>
