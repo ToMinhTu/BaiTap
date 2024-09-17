@@ -71,11 +71,7 @@ p > span#tooltip > span {
 }
 
 /* Same with top and bottom */
-#tooltip.top, #tooltip.bottom {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
+#tooltip.top, #tooltip.bottom,
 p > span#tooltip.top > span,
 p > span#tooltip#tooltip.bottom > span {
   left: 50%;
@@ -105,11 +101,7 @@ p > span#tooltip.bottom > span {
 }
 
 /* Same with left and right */
-#tooltip.left, #tooltip.right {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
+#tooltip.left, #tooltip.right,
 p > span#tooltip.left > span,
 p > span#tooltip#tooltip.right > span {
   top: 50%;
