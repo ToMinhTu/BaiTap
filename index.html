@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Document</title>
-</head>
-
-<body>
-
-  <div class="slider">
-    <div class="slide" id="img1">
-      <a href="#img3"><img src="./images/icon/back.png" alt="" /></a>
-      <img src="./images/img1.png" alt="" />
-      <a href="#img2"><img src="./images/icon/next.png" alt="" /></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tooltip">
+      Hover me
+      <span>This is tooltip</span>
     </div>
-    <div class="slide" id="img2">
-      <a href="#img1"><img src="./images/icon/back.png" alt="" /></a>
-      <img src="./images/img2.png" alt="" />
-      <a href="#img3"><img src="./images/icon/next.png" alt="" /></a>
+
+    <div class="tabs">
+      <input type="radio" name="radio-tab" id="tab1" checked />
+      <label for="tab1">Tab #1</label>
+      <input type="radio" name="radio-tab" id="tab2" />
+      <label for="tab2">Tab #2</label>
+      <input type="radio" name="radio-tab" id="tab3" />
+      <label for="tab3">Tab #3</label>
+      <div class="ra-body">
+        <div id="ra-b1">Content 1</div>
+        <div id="ra-b2">Content 2</div>
+        <div id="ra-b3">Content 3</div>
+      </div>
     </div>
-    <div class="slide" id="img3">
-      <a href="#img2"><img src="./images/icon/back.png" alt="" /></a>
-      <img src="./images/img3.jpg" alt="" />
-      <a href="#img1"><img src="./images/icon/next.png" alt="" /></a>
+
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="switch-slider"></span>
+    </label>
+
+    <div style="display: flex; gap: 50px">
+      <label class="menu-drawer"
+        >Open Drawer
+        <input type="checkbox" id="open-drawer" />
+        <span class="overlay" for="open-drawer"></span>
+        <div class="drawer">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </div>
+      </label>
+
+      <label class="modal"
+        >Open Modal
+        <input type="checkbox" id="open-modal" />
+        <span class="overlay-modal" for="open-modal"></span>
+        <div class="modal-content">
+          <div>
+            <p>Hello 😃</p>
+          </div>
+        </div>
+      </label>
     </div>
-  </div>
 
-  <div class="target">
-    <ul>
-      <li><a href="#tr1">tab1</a></li>
-      <li><a href="#tr2">tab2</a></li>
-      <li><a href="#tr3">tab3</a></li>
-    </ul>
-    <div class="tr-body">
-      <div id="tr1">1</div>
-      <div id="tr2">2</div>
-      <div id="tr3">3</div>
+    <div class="slider">
+      <input type="radio" name="slidenum" id="slide1" checked />
+      <input type="radio" name="slidenum" id="slide2" />
+      <input type="radio" name="slidenum" id="slide3" />
+      <div class="slide-screen">
+        <div class="slide-warp">
+          <img src="./images/sli1.jpg" alt="" />
+          <img src="./images/sli2.jpg" alt="" />
+          <img src="./images/sli3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="controller">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
     </div>
-  </div>
 
-  <div class="radio">
-    <input type="radio" id="ra1" name="radio-tab" checked />
-    <label for="ra1">tab1</label>
-    <input type="radio" id="ra2" name="radio-tab" />
-    <label for="ra2">tab2</label>
-    <input type="radio" id="ra3" name="radio-tab" />
-    <label for="ra3">tab3</label>
-    <div class="ra-body">
-      <div id="ra-b1">1</div>
-      <div id="ra-b2">2</div>
-      <div id="ra-b3">3</div>
-    </div>
-  </div>
-
-  <div class="collapse">
-    <input type="checkbox" id="coll" name="coll">
-    <label for="coll">Show collapse</label>
-    <label for="coll">Hide collapse</label>
-    <div>Well, just a skull 💀</div>
-  </div>
-
-  <!-- <div class="modal">
-    <input type="checkbox" id="mod" name="mod">
-    <label for="mod">Open modal</label>
-    <label for="mod">Close</label>
-    <div>Well, just a skull 💀</div>
-  </div> -->
-
-</body>
-
+    <label class="collap-parent"
+      >Open Collapsibles
+      <input type="checkbox" id="open-collap" />
+      <img src="" alt="" />
+      <div class="collap-content">
+        <p>Hello 😃</p>
+      </div>
+    </label>
+  </body>
 </html>
