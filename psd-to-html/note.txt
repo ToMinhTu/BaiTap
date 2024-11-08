@@ -1,0 +1,9 @@
+slide 1:
+	+ header:
+		- logo
+		- nav > 6 li
+		- button
+		- 4 icon social
+	+ content:
+		- left: title, para, button
+		- right: image
