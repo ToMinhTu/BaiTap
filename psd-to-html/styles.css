@@ -1,0 +1,34 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/* Reset CSS */
+
+/* Code Reuse */
+.has-two-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.inline-list li {
+  display: inline;
+}
+/* Code Reuse */
+
+/* header */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* header */
